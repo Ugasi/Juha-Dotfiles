@@ -1,1 +1,11 @@
 fish_variables
+
+## Ignore plugin function, configs and completions and allow own functions if they have prefixes
+fish/.config/fish/functions/*
+!fish/.config/fish/functions/my_*
+
+fish/.config/fish/conf.d/*
+!fish/.config/fish/conf.d/my_*
+
+fish/.config/fish/completions/*
+!fish/.config/fish/completions/my_*
