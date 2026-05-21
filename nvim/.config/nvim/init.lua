@@ -6,3 +6,6 @@ vim.cmd('set shiftwidth=4')
 
 -- Package manager configuration
 require('config.lazy')
+
+-- Theme configuration
+vim.cmd[[colorscheme tokyonight]]
