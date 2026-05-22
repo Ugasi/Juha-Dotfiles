@@ -9,6 +9,12 @@ require('config.kickstart')
 -- Package manager configuration
 require('config.lazy')
 
+require('oil').setup({
+    view_options = {
+        show_hidden = true,
+    }
+})
+
 -- Theme configuration
 vim.cmd[[colorscheme tokyonight]]
 
