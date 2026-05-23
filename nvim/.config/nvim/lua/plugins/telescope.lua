@@ -1,7 +1,18 @@
 return {
-    'nvim-telescope/telescope.nvim', version = '*',
-    dependencies = {
+  "nvim-telescope/telescope.nvim", version = '*',
+  dependencies = {
         'nvim-lua/plenary.nvim',
         { 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' },
-    }
+  },
+  cmd = "Telescope",
+  keys = {
+    { "<leader>ff", "<cmd>Telescope find_files<cr>", desc = "Find files" },
+    { "<leader>fg", "<cmd>Telescope live_grep<cr>", desc = "Grep (live)" },
+    { "<leader>fb", "<cmd>Telescope buffers<cr>", desc = "Buffers" },
+    { "<leader>fh", "<cmd>Telescope help_tags<cr>", desc = "Help tags" },
+  },
+  config = function()
+    require("telescope").setup({})
+  end,
 }
+
