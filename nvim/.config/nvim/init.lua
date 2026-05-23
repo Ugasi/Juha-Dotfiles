@@ -9,6 +9,3 @@ require('config.kickstart')
 -- Package manager configuration
 require('config.lazy')
 
--- Theme configuration
-vim.cmd[[colorscheme tokyonight]]
-
