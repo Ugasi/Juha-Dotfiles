@@ -6,6 +6,8 @@ vim.cmd('set shiftwidth=4')
 
 require('config.kickstart')
 
+require('config.keymaps')
+
 -- Package manager configuration
 require('config.lazy')
 
