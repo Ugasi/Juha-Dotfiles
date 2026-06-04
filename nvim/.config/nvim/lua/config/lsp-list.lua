@@ -1,3 +1,4 @@
 return {
-    "stylua"
+    "stylua",
+    "docker_language_server",
 }
