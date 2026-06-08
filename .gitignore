@@ -11,3 +11,5 @@ fish/.config/fish/completions/*
 !fish/.config/fish/completions/my_*
 
 lazy-lock.json
+
+tmux/.config/tmux/plugins
