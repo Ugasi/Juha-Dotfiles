@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-stow --target=$HOME nvim kitty fish
+stow --target=$HOME nvim kitty fish tmux
 
 fisher update
 
