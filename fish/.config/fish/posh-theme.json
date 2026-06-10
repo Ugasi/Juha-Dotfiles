@@ -150,16 +150,6 @@
           "options": {
             "always_enabled": true
           },
-          "template": "<transparent>\ue0b0</> \ueba2 {{ .FormattedMs }}\u2800",
-          "foreground": "#ffffff",
-          "background": "#83769c",
-          "type": "executiontime",
-          "style": "plain"
-        },
-        {
-          "options": {
-            "always_enabled": true
-          },
           "trailing_diamond": "\ue0b4",
           "template": "<parentBackground>\ue0b0</> \ue23a ",
           "foreground": "#ffffff",
@@ -175,6 +165,16 @@
     {
       "type": "rprompt",
       "segments": [
+        {
+          "options": {
+            "always_enabled": true
+          },
+          "template": "<#83769c,transparent>\ue0b6</> \ueba2 {{ .FormattedMs }} <transparent,#83769c>\ue0b2</>",
+          "foreground": "#ffffff",
+          "background": "#83769c",
+          "type": "executiontime",
+          "style": "plain"
+        },
         {
           "options": {
             "paused_icon": "\uf04c ",
