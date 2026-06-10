@@ -176,13 +176,6 @@
       "type": "rprompt",
       "segments": [
         {
-          "template": "<#0077c2,transparent>\ue0b6</> \uf489 {{ .Name }} <transparent,#0077c2>\ue0b2</>",
-          "foreground": "#ffffff",
-          "background": "#0077c2",
-          "type": "shell",
-          "style": "plain"
-        },
-        {
           "options": {
             "paused_icon": "\uf04c ",
             "playing_icon": "\uf04b "
