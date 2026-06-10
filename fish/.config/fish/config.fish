@@ -13,3 +13,4 @@ function fish_greeting
     # smth smth
 end
 
+oh-my-posh init fish | source
