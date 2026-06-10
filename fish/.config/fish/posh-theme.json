@@ -151,7 +151,7 @@
             "always_enabled": true
           },
           "trailing_diamond": "\ue0b4",
-          "template": "<parentBackground>\ue0b0</> \ue23a ",
+          "template": " \ue23a ",
           "foreground": "#ffffff",
           "background": "#00897b",
           "type": "status",
