@@ -68,7 +68,7 @@
             "always_enabled": true
           },
           "trailing_diamond": "\ue0b4",
-          "template": " \ue23a ",
+          "template": "{{ if eq .Code 0 }} \uf00c {{ else }} \uf071 {{ reason .Code }} {{ end }}",
           "foreground": "#ffffff",
           "background": "#00897b",
           "type": "status",
