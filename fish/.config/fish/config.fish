@@ -13,4 +13,4 @@ function fish_greeting
     # smth smth
 end
 
-oh-my-posh init fish | source
+oh-my-posh init fish --config ~/.config/fish/posh-theme.json | source
