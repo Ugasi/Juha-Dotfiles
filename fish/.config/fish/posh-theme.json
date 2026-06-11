@@ -61,7 +61,7 @@
           "options": {
             "always_enabled": true
           },
-          "template": "{{ if eq .Code 0 }} \uf00c {{ else }} \uf071 {{ reason .Code }} {{ end }}",
+          "template": "{{ if eq .Code 0 }} <p:color2>\uf00c</> {{ else }} <p:color1>\uf071 {{ reason .Code }}</> {{ end }}",
           "foreground": "p:color4",
           "type": "status",
           "style": "plain"
