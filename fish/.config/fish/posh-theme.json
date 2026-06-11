@@ -88,7 +88,7 @@
         },
         {
           "template": " {{ .CurrentDate | date .Format }} ",
-          "foreground": "p:blue",
+          "foreground": "p:cyan",
           "type": "time",
           "style": "plain"
         }
