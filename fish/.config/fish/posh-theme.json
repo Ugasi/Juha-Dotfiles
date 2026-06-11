@@ -7,15 +7,14 @@
     "notice": false
   },
   "palette": {
-    "white": "#ffffff",
-    "color0": "#15161e",
-    "color1": "#f7768e",
-    "color2": "#9ece6a",
-    "color3": "#e0af68",
-    "color4": "#7aa2f7",
-    "color5": "#bb9af7",
-    "color6": "#7dcfff",
-    "color7": "#a9b1d6"
+    "black": "#15161e",
+    "red": "#f7768e",
+    "green": "#9ece6a",
+    "yellow": "#e0af68",
+    "blue": "#7aa2f7",
+    "purple": "#bb9af7",
+    "cyan": "#7dcfff",
+    "grey": "#a9b1d6"
   },
   "console_title_template": "{{ .Folder }}",
   "blocks": [
@@ -25,7 +24,7 @@
       "segments": [
         {
           "template": " {{ .UserName }}@{{ .HostName }} ",
-          "foreground": "p:color4",
+          "foreground": "p:blue",
           "type": "session",
           "style": "plain"
         },
@@ -36,7 +35,7 @@
             "style": "full"
           },
           "template": " {{ .Path }} ",
-          "foreground": "p:color4",
+          "foreground": "p:blue",
           "type": "path",
           "style": "plain"
         },
@@ -47,13 +46,13 @@
             "fetch_upstream_icon": true
           },
           "template": " {{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }} ",
-          "foreground": "p:color4",
+          "foreground": "p:blue",
           "type": "git",
           "style": "plain"
         },
         {
           "template": " \uf0ad ",
-          "foreground": "p:color4",
+          "foreground": "p:blue",
           "type": "root",
           "style": "plain"
         },
@@ -61,8 +60,8 @@
           "options": {
             "always_enabled": true
           },
-          "template": "{{ if eq .Code 0 }} <p:color2>\uf00c</> {{ else }} <p:color1>\uf071 {{ reason .Code }}</> {{ end }}",
-          "foreground": "p:color4",
+          "template": "{{ if eq .Code 0 }} <p:green>\uf00c</> {{ else }} <p:red>\uf071 {{ reason .Code }}</> {{ end }}",
+          "foreground": "p:blue",
           "type": "status",
           "style": "plain"
         }
@@ -76,13 +75,13 @@
             "always_enabled": true
           },
           "template": " {{ .FormattedMs }} ",
-          "foreground": "p:color3",
+          "foreground": "p:yellow",
           "type": "executiontime",
           "style": "plain"
         },
         {
           "template": " {{ .CurrentDate | date .Format }} ",
-          "foreground": "p:color4",
+          "foreground": "p:blue",
           "type": "time",
           "style": "plain"
         }
