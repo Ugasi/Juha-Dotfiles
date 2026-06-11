@@ -53,7 +53,7 @@
             "{{ if gt .Ahead 0 }}p:purple{{ end }}",
             "{{ if gt .Behind 0 }}p:purple{{ end }}"
         ],
-          "foreground": "p:blue",
+          "foreground": "p:grey",
           "type": "git",
           "style": "plain"
         },
