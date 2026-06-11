@@ -36,13 +36,13 @@
             "fetch_upstream_icon": true
           },
           "template": " {{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }} ",
-          "foreground": "#193549",
+          "foreground": "#ffffff",
           "type": "git",
           "style": "plain"
         },
         {
           "template": " \uf0ad ",
-          "foreground": "#111111",
+          "foreground": "#ffffff",
           "type": "root",
           "style": "plain"
         },
@@ -71,7 +71,7 @@
         },
         {
           "template": " {{ .CurrentDate | date .Format }} ",
-          "foreground": "#111111",
+          "foreground": "#ffffff",
           "type": "time",
           "style": "plain"
         }
