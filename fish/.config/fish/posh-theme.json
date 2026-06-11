@@ -24,7 +24,7 @@
             "home_icon": "~",
             "style": "full"
           },
-          "template": " \uea83  {{ .Path }} ",
+          "template": " {{ .Path }} ",
           "foreground": "#ffffff",
           "type": "path",
           "style": "plain"
@@ -64,7 +64,7 @@
           "options": {
             "always_enabled": true
           },
-          "template": " \ueba2 {{ .FormattedMs }} ",
+          "template": " {{ .FormattedMs }} ",
           "foreground": "#ffffff",
           "type": "executiontime",
           "style": "plain"
