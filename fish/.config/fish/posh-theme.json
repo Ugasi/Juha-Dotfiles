@@ -25,7 +25,7 @@
       "segments": [
         {
           "template": " {{ .UserName }}@{{ .HostName }} ",
-          "foreground": "p:blue",
+          "foreground": "p:green",
           "type": "session",
           "style": "plain"
         },
