@@ -7,6 +7,7 @@
     "notice": false
   },
   "palette": {
+    "white": "#ffffff",
     "black": "#15161e",
     "red": "#f7768e",
     "green": "#9ece6a",
@@ -75,7 +76,8 @@
       ]
     },
     {
-      "type": "rprompt",
+      "type": "prompt",
+      "alignment": "right",
       "segments": [
         {
           "options": {
@@ -93,6 +95,23 @@
           "style": "plain"
         }
       ]
+    },
+    {
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "foreground": "p:white",
+          "foreground_templates": ["{{ if gt .Code 0 }}#ef5350{{ end }}"],
+          "options": {
+            "always_enabled": true
+          },
+          "style": "plain",
+          "template": "\ueab6",
+          "type": "status"
+        }
+      ],
+      "type": "prompt"
     }
   ],
   "version": 4,
